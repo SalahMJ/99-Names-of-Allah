@@ -142,8 +142,8 @@ class _CardCarouselState extends State<CardCarousel> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height - 9,
-      width: MediaQuery.of(context).size.width - 9,
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width - 7,
       child: PageView.builder(
         controller: _controller,
         itemCount: _data.length,
